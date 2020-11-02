@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sky</title>
+    <meta name="description" content="Sky" />
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Aframe -->
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    <!-- Bootoast -->
+    <link
+      href="scripts/dist/bootoast.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="scripts/dist/bootoast.min.js"></script>
+
+    <!-- Main.js -->
+    <script src="scripts/main.js"></script>
+  </head>
+  <body>
+    <a-scene isMobile="false">
+      <a-assets>
+        <img id="room" src="images/room.jpg" />
+      </a-assets>
+
+      <a-sky id="image-360" radius="50" src="#room"></a-sky>
+
+      <a-plane
+        id="sergi"
+        color="#F00"
+        opacity="0.5"
+        position="-15 1.5 3.5"
+        rotation="0 90 0"
+        height="5"
+        width="5"
+        data-text="Sergi"
+      >
+        <a-animation
+          attribute="opacity"
+          begin="mouseenter"
+          dur="500"
+          from="0.5"
+          to="0.25"
+          direction="alternate"
+          repeat="indefinite"
+        ></a-animation
+      ></a-plane>
+      <a-text
+        position="-14 1.5 4.5"
+        rotation="0 90 0"
+        width="20"
+        value="Sergi"
+        id="sergi-text"
+      ></a-text>
+
+      <a-plane
+        id="sonic"
+        color="#F00"
+        opacity="0.5"
+        position="-25 -10 -15"
+        rotation="0 70 0"
+        height="10"
+        width="20"
+        data-text="Sonic"
+      >
+        <a-animation
+          attribute="opacity"
+          begin="mouseenter"
+          dur="500"
+          from="0.5"
+          to="0.25"
+          direction="alternate"
+          repeat="indefinite"
+        ></a-animation
+      ></a-plane>
+
+      <a-plane
+        id="micro"
+        color="#F00"
+        opacity="0.5"
+        position="-4 1 -6.5"
+        rotation="0 20 0"
+        height="2"
+        width="2"
+        data-text="Micro"
+      >
+        <a-animation
+          attribute="opacity"
+          begin="mouseenter"
+          dur="500"
+          from="0.5"
+          to="0.25"
+          direction="alternate"
+          repeat="indefinite"
+        ></a-animation
+      ></a-plane>
+
+      <a-plane
+        id="among"
+        color="#F00"
+        opacity="0.5"
+        position="-0.60 -3.5 -9.5"
+        rotation="-10 20 0"
+        height="1.5"
+        width="1.5"
+        data-text="Among Us"
+      >
+        <a-animation
+          attribute="opacity"
+          begin="mouseenter"
+          dur="500"
+          from="0.5"
+          to="0.25"
+          direction="alternate"
+          repeat="indefinite"
+        ></a-animation
+      ></a-plane>
+
+      <a-plane
+        id="fire"
+        color="#F00"
+        opacity="0.5"
+        position="2.8 -3 1.25"
+        rotation="-45 -90 20"
+        height="1"
+        width="2.5"
+        data-text="Foc"
+      >
+        <a-animation
+          attribute="opacity"
+          begin="mouseenter"
+          dur="500"
+          from="0.5"
+          to="0.25"
+          direction="alternate"
+          repeat="indefinite"
+        ></a-animation>
+      </a-plane>
+
+      <a-camera rotation="0 90 0" wasd-controls-enabled="false">
+        <a-cursor color="#FF66FF"></a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
