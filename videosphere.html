@@ -2,24 +2,48 @@
 <html>
   <head>
     <title>Videosphere</title>
-    <meta name="description" content="Videosphere">
+    <meta name="description" content="Videosphere" />
     <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene >
+    <a-scene>
       <a-assets>
-        <img id="texturaOxid" src="oxid.png">
-        <!--video id="cubsVideo" autoplay loop="true" src="cubsVideo.mp4"-->
-        <video id="cubsVideo" autoplay loop="true" src="video360.ogg">
+        <img id="texturaOxid" src="images/oxid.png" />
+        <img id="link-sky" src="images/room.jpg" />
       </a-assets>
 
-      <a-videosphere src="#cubsVideo"></a-videosphere>
-      
-      <a-box position="-8 1 -2" rotation="0 30 45" scale="2 2 2" src="#texturaOxid">
-        <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite" to="-8 1 -3"></a-animation>
-        <a-animation scale="rotation" begin="mouseenter" dur="300" to="360 45 45"></a-animation>
-      </a-box>   
-  
+      <a-videosphere src="images/video.mp4"></a-videosphere>
+
+      <a-box
+        position="-8 1 -2"
+        rotation="0 30 45"
+        scale="2 2 2"
+        src="#texturaOxid"
+      >
+        <a-animation
+          attribute="position"
+          direction="alternate"
+          dur="2000"
+          repeat="indefinite"
+          to="-8 1 -3"
+        ></a-animation>
+        <a-animation
+          scale="rotation"
+          begin="mouseenter"
+          dur="300"
+          to="360 45 45"
+        ></a-animation>
+      </a-box>
+
+      <a-link
+        href="sky.html"
+        title="Go to Sky"
+        image="#link-sky"
+        peekMode="false"
+        position="3 2 0"
+        rotation="0 90 0"
+      ></a-link>
+
       <a-camera>
         <a-cursor color="#ff66ff"></a-cursor>
       </a-camera>

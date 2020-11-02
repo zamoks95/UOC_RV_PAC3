@@ -24,10 +24,11 @@
   </head>
   <body>
     <a-scene isMobile="false">
+
       <a-assets>
         <img id="room" src="images/room.jpg" />
+        <img id="link-videosphere" src="images/room.jpg" />
       </a-assets>
-
       <a-sky id="image-360" radius="50" src="#room"></a-sky>
 
       <a-plane
@@ -50,13 +51,6 @@
           repeat="indefinite"
         ></a-animation
       ></a-plane>
-      <a-text
-        position="-14 1.5 4.5"
-        rotation="0 90 0"
-        width="20"
-        value="Sergi"
-        id="sergi-text"
-      ></a-text>
 
       <a-plane
         id="sonic"
@@ -141,6 +135,16 @@
           repeat="indefinite"
         ></a-animation>
       </a-plane>
+
+      <a-link
+        href="videosphere.html"
+        title="Go to Videosphere"
+        image="#link-videosphere"
+        peekMode="false"
+        position="3 2 0"
+        rotation="0 90 0"
+      ></a-link>
+      <!-- Links - End -->
 
       <a-camera rotation="0 90 0" wasd-controls-enabled="false">
         <a-cursor color="#FF66FF"></a-cursor>
