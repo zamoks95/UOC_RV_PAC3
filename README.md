@@ -1,11 +1,6 @@
-# Tutorial_A-Frame_360
-**---CAT:**
+# Realitat Virtual - PAC 3
+## Tutorial A-FRAME 360º
 
-**A-Frame 360º:**
-Tutorial de panoràmiques 360º amb A-Frame: https://gitlab.com/webXR/Tutorial_A-Frame_360/wikis/home
+### Start Dev Server
 
-
-**---ESP:**
-
-**A-Frame 360º:**
-Tutorial de panorámicas 360º con A-Frame: https://gitlab.com/webXR/Tutorial_A-Frame_360/wikis/home#es
+Open sky.html in a web server
